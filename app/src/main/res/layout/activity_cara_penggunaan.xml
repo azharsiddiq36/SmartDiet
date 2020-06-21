@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaraPenggunaan">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Cara Penggunaan Aplikasi Smart Diet"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:id="@+id/textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:padding="5dp"
+        android:id="@+id/scrollView"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+        <TextView
+            android:lineHeight="25dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Tekan Tombol Mulai" />
+        <TextView
+            android:lineHeight="25dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Masukkan tinggi badan, berat badan dan umur anda" />
+        <TextView
+            android:lineHeight="25dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Tekan Tombol Next" />
+        <TextView
+            android:lineHeight="25dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Pilih Tingkat Aktifitas" />
+        <TextView
+            android:lineHeight="25dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Tekan Tombol Next" />
+        <TextView
+            android:lineHeight="25dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Pilih salah satu jenis kelamin" />
+        <TextView
+            android:lineHeight="25dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. Hasil Perhitungan BMI dan angka kalori akan ditampilkan" />
+    </LinearLayout>
+
+    <Button
+        style="@style/btn_yellow_primary"
+        android:layout_marginTop="24dp"
+        android:id="@+id/btnKembali"
+        android:text="Kembali Ke Menu"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+</android.support.constraint.ConstraintLayout>

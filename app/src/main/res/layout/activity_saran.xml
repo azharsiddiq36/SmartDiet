@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaranActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/textview"
+        android:text="Table Jenis Makanan dengan Angka Kalori"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lemak"
+        android:textStyle="bold"
+        android:id="@+id/tlemak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        android:textAlignment="center" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlemak">
+        <TableRow android:background="#22c5c7c7">
+
+            <TextView
+                android:background="@drawable/bg_border"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:text="Jenis Makanan" />
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:textStyle="bold"
+                android:background="@drawable/bg_border"
+                android:text="Jumlah/Unit" />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/bg_border"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:text="Kandungan Lemak"/>
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Alpukat" />
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="1/2 buah besar" />
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="540 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Mayonnaise" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="2 Sendok Makan" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="225 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Mentega" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 Sendok Makan" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="135 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Ikan Kembung" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="100 gram" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="20.7 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Minyak Kelapa" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 Sendok Teh" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="45 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Keju Krim" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 Sendok Teh" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="135 kal" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Karbohidrat"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:id="@+id/tkarbo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table"
+        android:textAlignment="center" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/table2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tkarbo">
+        <TableRow android:background="#22c5c7c7">
+
+            <TextView
+                android:background="@drawable/bg_border"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:text="Jenis Makanan" />
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:textStyle="bold"
+                android:background="@drawable/bg_border"
+                android:text="Jumlah/Unit" />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/bg_border"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:text="Kandungan Karbohidrat" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Beras Merah" />
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="6 Sendok Makan" />
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="160 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Roti Gandum" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="2 buah" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="150 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Jagung Manis" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 buah" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="65 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Kentang" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 buah" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="80 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Susu Murni" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 Gelas" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="11 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Gula Pasir" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 Sendok Makan" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="20 kal" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Protein"
+        android:textStyle="bold"
+        android:id="@+id/tprotein"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table2"
+        android:textAlignment="center" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/table3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tprotein">
+        <TableRow android:background="#22c5c7c7">
+
+            <TextView
+                android:background="@drawable/bg_border"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:text="Jenis Makanan" />
+            <TextView
+                android:gravity="center"
+                android:padding="3dip"
+                android:textStyle="bold"
+                android:background="@drawable/bg_border"
+                android:text="Jumlah/Unit" />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/bg_border"
+                android:textStyle="bold"
+                android:padding="3dip"
+                android:text="Kandungan Protein" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Ayam Tanpa Kulit" />
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="1 potong" />
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="160 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Daging Merah" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 Potong" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="90 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Telur Ayam" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 Butir" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="95 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Tempe" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 potong" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="80 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Kacang-kacangan" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="2.5 sendok makan" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="50 kal" />
+        </TableRow>
+        <TableRow android:background="#22c5c7c7">
+            <TextView
+                android:gravity="start"
+                android:padding="3dip"
+                android:background="@drawable/bg_border"
+                android:text="Tahu" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="1 buah" />
+            <TextView
+                android:gravity="start"
+                android:background="@drawable/bg_border"
+                android:padding="3dip"
+                android:text="85 kal" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_marginTop="24dp"
+        style="@style/btn_yellow_primary"
+        android:text="Kembali"
+        android:id="@+id/btnKembali"
+        app:layout_constraintTop_toBottomOf="@+id/table3"/>
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

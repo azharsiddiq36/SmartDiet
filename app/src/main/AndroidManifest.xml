@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="i.digtive.smartdiet">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HasilAkhir" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".FormActivity" />
+        <activity android:name=".FormAktifitas" />
+        <activity android:name=".FormJenisKelamin" />
+        <activity android:name=".TingkatAktifitas" />
+
+        <activity android:name=".CaraPenggunaan" />
+        <activity android:name=".InformasiAplikasi" />
+        <activity android:name=".SaranActivity"></activity>
+    </application>
+
+</manifest>

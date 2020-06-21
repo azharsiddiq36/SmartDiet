@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SmartDiet</string>
+    <string-array name="aktifitas">
+        <item>Pilih Salah Satu</item>
+        <item>Jarang/Tidak Pernah Olahraga</item>
+        <item>1 Kali Seminggu</item>
+        <item>2 Kali Seminggu</item>
+        <item>3 Kali Seminggu</item>
+        <item>4 Kali Seminggu</item>
+        <item>5 Kali Seminggu</item>
+        <item>6 Kali Seminggu</item>
+        <item>7 Kali Seminggu</item>
+        <item>2 Kali Sehari dalam Seminggu/Lebih</item>
+    </string-array>
+</resources>
