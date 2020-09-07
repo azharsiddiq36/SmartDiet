@@ -19,7 +19,6 @@ public class FormJenisKelamin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_jenis_kelamin);
         ButterKnife.bind(this);
-        Log.d("kambing", "onCreate: "+getIntent().getStringExtra("aktifitas"));
     }
     @OnClick(R.id.btnLakiLakir)
     protected void btnLakiLakir(View view){
